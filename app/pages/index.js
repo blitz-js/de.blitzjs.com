@@ -49,16 +49,16 @@ const Home = ({ randomContributors }) => {
               <div className="grid grid-cols-1 gap-10 px-6 mx-auto max-w-7xl lg:grid-cols-3 xl:grid-cols-2 md:gap-6 xl:-mt-10">
                 <div className="z-10 space-y-10 lg:w-full">
                   <h2 className="-mt-8 font-medium text-5xl-squashed lg:-mt-0 font-secondary xl:text-6xl xl:font-medium dark:text-transparent bg-clip-text bg-gradient-to-r from-blue-gradient-white to-blue-gradient-light-blue">
-                    The Fullstack React Framework
+                    Das Fullstack React Framework
                   </h2>
                   <p className="text-lg xl:text-xl xl:font-medium text-off-white lg:text-transparent lg:bg-clip-text lg:bg-gradient-to-r lg:from-blue-gradient-white lg:to-blue-gradient-light-blue xl:w-4/5">
-                    Blitz is a batteries-included framework that's inspired by Ruby on Rails, is
-                    built on Next.js, and features a "Zero-API" data layer abstraction that
-                    eliminates the need for REST/GraphQL.
+                    Blitz ist ein Framework das inspiriert ist von Ruby on Rails. Es basiert auf
+                    Next.js und bietet eine"Zero-API" Datenschicht Abstraktion die kein REST/GraphQL
+                    benötigt.
                   </p>
                   <div className="flex space-x-4">
                     <ButtonLink className="w-2/3 lg:w-auto rounded-tl-xl" href="/docs/get-started">
-                      Try Blitz in Under 5 Mins
+                      Probiere Blitz in weniger als 5 Min aus
                     </ButtonLink>
                     <ButtonLink
                       href="https://github.com/blitz-js/blitz"
@@ -95,24 +95,26 @@ const Home = ({ randomContributors }) => {
             </div>
             <div className="z-10 px-6 mx-auto space-y-12 text-lg text-center text-white lg:space-y-0 lg:space-x-12 lg:flex lg:text-left max-w-7xl xl:font-mediumxl:text-xl">
               <FeatureIcon icon="layers">
-                “Zero-API” data layer lets you{" "}
-                <strong>import server code directly into your components</strong> instead of having
-                to manually add API endpoints and do client-side fetching and caching.
+                “Zero-API” Datenschicht erlaubt es{" "}
+                <strong>Server Code direkt in die Komponenten zu importieren</strong> anstatt API
+                Endpunkte, Client-seitiges Empfangen der Daten und Caching von Hand hinzufügen zu
+                müssen.
               </FeatureIcon>
               <FeatureIcon icon="lighteningBolt">
-                New Blitz apps come with all the{" "}
-                <strong>boring stuff already set up for you!</strong> Like ESLint, Prettier, Jest,
-                user sign up, log in, and password reset.
+                Neue Blitz Apps haben schon die ganzen{" "}
+                <strong>langweiligen Sachen fertig aufgestzt für dich!</strong> Zum Beispiel ESLint,
+                Prettier, Jest, Registrierung, Log in und Passwort zurücksetzen.
               </FeatureIcon>
               <FeatureIcon icon="graphUp">
-                Provides <strong>helpful defaults and conventions</strong> for things like routing,
-                file structure, and authentication while also being extremely flexible.
+                Beinhaltet <strong>hilfreiche Standardwerte und Konventionen</strong> für Dinge wie
+                Routing, Dateistruktur und Authentifizierung, bleibt dabei aber dennoch extrem
+                flexibel.
               </FeatureIcon>
             </div>
             <div className="grid w-full gap-5 px-6 mx-auto text-white xl:gap-10 max-w-7xl lg:grid-cols-2">
               <Link href="/#" passHref>
                 <StyledLink className="flex items-center justify-between pb-1 text-lg border-b border-opacity-50 border-blue-mid lg:col-span-2 font-secondary xl:text-xl">
-                  <span>Top Videos</span>
+                  <span>Beliebte Videos</span>
 
                   {/*
                   <span className="flex items-center">
@@ -128,7 +130,7 @@ const Home = ({ randomContributors }) => {
 
             <div className="relative w-full mx-auto space-y-10 lg:space-y-20 xl:space-y-36 max-w-7xl">
               <h2 className="px-6 text-3xl font-semibold xl:text-5xl xl:w-1/2">
-                Everything You Need For Production Apps
+                Alles was man für "Production Apps" braucht
               </h2>
               <div className="w-full">
                 <Hand
