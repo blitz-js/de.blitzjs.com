@@ -54,9 +54,8 @@ const Home = ({randomContributors}) => {
                     Das Fullstack React Framework
                   </h2>
                   <p className="text-lg xl:text-xl xl:font-medium text-off-white lg:text-transparent lg:bg-clip-text lg:bg-gradient-to-r lg:from-blue-gradient-white lg:to-blue-gradient-light-blue xl:w-4/5">
-                    Blitz ist ein Framework das inspiriert ist von Ruby on Rails. Es basiert auf
-                    Next.js und bietet eine"Zero-API" Datenschicht Abstraktion die kein REST/GraphQL
-                    benötigt.
+                    Blitz ist ein auf Ruby on Rails basierendes Framework. Es bauf auf Next.js und
+                    bietet eine"Zero-API" Datenschicht Abstraktion die kein REST/GraphQL benötigt.
                   </p>
                   <div className="flex space-x-4">
                     <ButtonLink className="w-2/3 lg:w-auto rounded-tl-xl" href="/docs/get-started">
@@ -98,14 +97,14 @@ const Home = ({randomContributors}) => {
             <div className="z-10 px-6 mx-auto space-y-12 text-lg text-center text-white lg:space-y-0 lg:space-x-12 lg:flex lg:text-left max-w-7xl xl:font-mediumxl:text-xl">
               <FeatureIcon icon="layers">
                 “Zero-API” Datenschicht erlaubt es{" "}
-                <strong>Server Code direkt in die Komponenten zu importieren</strong> anstatt API
+                <strong>Server Code direkt in deine Komponenten zu importieren</strong> anstatt API
                 Endpunkte, Client-seitiges Empfangen der Daten und Caching von Hand hinzufügen zu
                 müssen.
               </FeatureIcon>
               <FeatureIcon icon="lighteningBolt">
                 Neue Blitz Apps haben schon die ganzen{" "}
                 <strong>langweiligen Sachen fertig aufgestzt für dich!</strong> Zum Beispiel ESLint,
-                Prettier, Jest, Registrierung, Log in und Passwort zurücksetzen.
+                Prettier, Jest, Registrierung, LogIn und Passwort zurücksetzen.
               </FeatureIcon>
               <FeatureIcon icon="graphUp">
                 Beinhaltet <strong>hilfreiche Standardwerte und Konventionen</strong> für Dinge wie
@@ -132,7 +131,7 @@ const Home = ({randomContributors}) => {
 
             <div className="relative w-full mx-auto space-y-10 lg:space-y-20 xl:space-y-36 max-w-7xl">
               <h2 className="px-6 text-3xl font-semibold xl:text-5xl xl:w-1/2">
-                Alles was man für "Production Apps" braucht
+                Alles was du für "Production Apps" braucht
               </h2>
               <div className="w-full">
                 <Hand
@@ -150,10 +149,9 @@ const Home = ({randomContributors}) => {
                     </Feature>
                     <Feature title="API nicht notwendig">
                       <p>
-                        Anstatt Daten aus dem Backend abzurufen, importieren wird der Servercode
-                        direkt in die Komponenten importiert. Zum Zeitpunkt der Erstellung wird
-                        dieser Funktionsimport mit einer automatisch generierten HTTP-API
-                        ausgetauscht.
+                        Anstatt Daten aus dem Backend abzurufen, wird der Servercode direkt in die
+                        Komponenten importiert. Zum Zeitpunkt der Erstellung wird dieser
+                        Funktionsimport mit einer automatisch generierten HTTP-API ausgetauscht.
                       </p>
                       <p>
                         Die generierte API kann auch von Apps und Drittanbietern verwendet werden.
@@ -172,7 +170,7 @@ const Home = ({randomContributors}) => {
                     </Feature>
                     <Feature title="Konvention vor Konfiguration">
                       <p>
-                        Blitz erledigt die langweilige Einrichtung und Konfiguration für einen. Die
+                        Blitz erledigt die langweilige Einrichtung und Konfiguration für dich. Die
                         gemeinsame Projektstruktur und Architekturmuster erleichtern es von einer
                         Blitz App zu einer Anderen zu wechseln und sich sofort zu Hause zu fühlen.
                       </p>
@@ -214,7 +212,7 @@ const Home = ({randomContributors}) => {
                 >
                   <Image src="/img/sandbox-pic.png" layout="fill" className="object-cover" />
                   <div className="absolute inset-0 bg-gray-800 opacity-0 hover:opacity-70 flex items-center justify-center text-white text-6xl font-bold">
-                    Klicken um in einem neuen Tab zu öffnen
+                    Klicke, um in einem neuen Tab zu öffnen
                   </div>
                 </a>
               </div>
@@ -273,8 +271,8 @@ const Home = ({randomContributors}) => {
                 <div className="z-10 flex flex-col justify-between space-y-6 lg:justify-start">
                   <div className="flex flex-col space-y-6 lg:h-auto lg:text-transparent text-off-white lg:bg-clip-text lg:bg-gradient-to-r lg:from-blue-gradient-white lg:to-blue-gradient-light-blue">
                     <p className="lg:bg-gradient-to-r lg:from-blue-gradient-white lg:to-blue-gradient-light-blue lg:bg-clip-text">
-                      Wir sind hier alle zusammen dabei, von jung bis alt. Wir sind uns alle mehr
-                      ähnlich als wir anders sind. Wir lieben es zusammenzuarbeiten.
+                      Wir sind hier alle zusammen dabei, von jung bis alt. Wir sind uns alle
+                      ähnlicher, als wir anders sind. Wir lieben es zusammenzuarbeiten.
                     </p>
                     <p className="lg:bg-gradient-to-r lg:from-blue-gradient-white lg:to-blue-gradient-light-blue lg:bg-clip-text">
                       Wir laden dich ein, Blitz zum besten Framework zu machen, das wir je hatten!
@@ -316,13 +314,13 @@ const Home = ({randomContributors}) => {
                 />
                 <FeatureIconTitle icon="thumbsUp" title="Authentifizierung & Autorisierung">
                   Die integrierte Authentifizierung ist sehr einfach und sehr sicher. Funktioniert
-                  mit jedem Identity-Provider, einschließlich einer selbst gehosteter "Benutzername
+                  mit jedem Identity-Provider, einschließlich einer selbst gehosteten "Benutzername
                   und Passwort" Lösung, sowie Drittanbieter wie Auth0.
                 </FeatureIconTitle>
                 <FeatureIconTitle icon="database" title="Databankagnostisch">
-                  Man kann jede gewünschte Datenbank verwenden. Prisma 2 ist jedoch der
-                  Standard-Datenbankclient Man kann dies jedoch entfernen und andere Datenbanken wie
-                  Fauna oder DynamoDB verwenden.
+                  Du kannst jede gewünschte Datenbank verwenden. Prisma 2 ist jedoch der
+                  Standard-Datenbankclient Du kannst diesen jedoch entfernen und andere Datenbanken
+                  wie Fauna oder DynamoDB verwenden.
                 </FeatureIconTitle>
                 <FeatureIconTitle icon="fileCode" title="Rezepte">
                   Ein Befehl zum Installieren von Code und / oder Paketen in einer Blitz-App.
@@ -449,7 +447,7 @@ const getStaticProps = async () => {
 Home.layoutProps = {
   meta: {
     title: "Blitz.js - Das Fullstack React Framework",
-    description: `Blitz ist ein hyper-productives fullstack React framework, welches auf Next.js aufbaut und eine "Zero-API" Datenschicht bietet.`,
+    description: `Blitz ist ein hyper-productive Fullstack React framework, welches auf Next.js aufbaut und eine "Zero-API" Datenschicht bietet.`,
   },
 }
 
