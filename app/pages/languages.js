@@ -34,9 +34,9 @@ const LanguagesPage = ({languages}) => {
       ></div>
       <main className="mx-auto max-w-7xl px-6 py-24 xl:py-36 text-black dark:text-dark-mode-text space-y-16 lg:space-y-20">
         <div className="space-y-6">
-          <h1 className="font-primary text-3xl lg:text4xl xl:text-5xl font-semibold">Languages</h1>
+          <h1 className="font-primary text-3xl lg:text4xl xl:text-5xl font-semibold">Sprachen</h1>
           <p className="font-secondary text-lg text-gray-600 dark:text-gray-300">
-            The Blitz documentation is currently being translated into the following languages:
+            Die Blitz Dokumentation wird momentan in folgende Sprachen übersetzt:
           </p>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-x-12 gap-y-6">
@@ -49,21 +49,21 @@ const LanguagesPage = ({languages}) => {
                   href={`https://github.com/blitz-js/${lang.code}.blitzjs.com/issues/1`}
                   className="text-purple-light dark:text-purple-extralight font-medium dark:font-bold no-underline dark:underline hover:underline"
                 >
-                  Help Translate
+                  Hilf zu Übersetzen
                 </a>
               </p>
             </div>
           ))}
         </div>
         <div className="font-secondary text-base text-gray-600 dark:text-gray-300">
-          Don't see your language?{" "}
+          Du siehst deine Sprache nicht?{" "}
           <a
             href="https://github.com/blitz-js/blitzjs.com-translation#starting-a-new-translation"
             target="_blank"
             rel="noreferrer"
             className="text-purple-light dark:text-purple-extralight font-medium dark:font-bold no-underline dark:underline hover:underline"
           >
-            Read how to start a new translation
+            Erfahre, wie du eine neue Übersetzung startest
           </a>
         </div>
       </main>
@@ -130,8 +130,8 @@ const getStaticProps = async () => {
 }
 
 LanguagesPage.meta = {
-  title: "Languages - Blitz.js",
-  description: `Blitz is a hyper-productive fullstack React framework that's built on Next.js and features a "Zero-API" data layer.`,
+  title: "Sprachen - Blitz.js",
+  description: `Blitz ist ein hyper-productive Fullstack React framework, welches auf Next.js aufbaut und eine "Zero-API" Datenschicht bietet.`,
 }
 
 export default LanguagesPage
