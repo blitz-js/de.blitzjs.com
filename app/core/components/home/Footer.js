@@ -24,8 +24,8 @@ export function Footer({className, hasDarkMode}) {
         <div className="grid px-6 mx-auto max-w-7xl lg:grid-cols-3 gap-x-24 my-14 lg:mt-24 lg:mb-12 gap-y-7">
           <div className="flex flex-col justify-between space-y-7">
             <p className="text-lg font-semibold">
-              Want to receive the latest news and updates from the Blitz team? Sign up for our
-              newsletter!
+              Du möchtest die aktuellsten News und Updates des Blitz Teams erhalten? Melde dich für
+              unseren Newsletter an!
             </p>
             <div className="pb-5 lg:pb-0">
               <NewsletterForm hasDarkMode={hasDarkMode} />
@@ -33,15 +33,15 @@ export function Footer({className, hasDarkMode}) {
           </div>
           <div className="flex flex-col justify-between space-y-7 lg:col-span-2">
             <div className="grid gap-7 md:grid-cols-3">
-              <LinkList title="Docs">
+              <LinkList title="Dokumentation">
                 <Link href="/docs">
-                  <a>All Docs</a>
+                  <a>Alle Dokumentation</a>
                 </Link>
                 <Link href="/docs/get-started">
-                  <a>Get Started</a>
+                  <a>Durchstarten</a>
                 </Link>
                 <Link href="/docs/contributing">
-                  <a>How To Contribute</a>
+                  <a>Wie helfe ich mit</a>
                 </Link>
               </LinkList>
 
@@ -53,7 +53,7 @@ export function Footer({className, hasDarkMode}) {
                 </Link>
                 <Link href="https://github.com/blitz-js/blitz/discussions">
                   <a target="_blank" rel="noopener noreferrer">
-                    Forum Discussions
+                    Forumsdiskussionen
                   </a>
                 </Link>
                 <Link href="https://twitter.com/blitz_js">
@@ -63,7 +63,7 @@ export function Footer({className, hasDarkMode}) {
                 </Link>
               </LinkList>
 
-              <LinkList title="Other">
+              <LinkList title="Anderes">
                 <Link href="https://github.com/blitz-js/blitz">
                   <a target="_blank" rel="noopener noreferrer">
                     GitHub
@@ -90,11 +90,11 @@ export function Footer({className, hasDarkMode}) {
             >
               <Link href="https://vercel.com/?utm_source=blitzjs">
                 <a target="_blank" rel="noopener noreferrer">
-                  Hosted on <IoLogoVercel className="inline" /> Vercel
+                  Gehosted auf <IoLogoVercel className="inline" /> Vercel
                 </a>
               </Link>
               <br />
-              Copyright &copy; {new Date().getFullYear()} Brandon Bayer and Blitz.js Contributors
+              Copyright &copy; {new Date().getFullYear()} Brandon Bayer und Blitz.js Contributors
             </div>
           </div>
         </div>

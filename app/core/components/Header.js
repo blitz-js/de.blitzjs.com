@@ -80,11 +80,11 @@ const Header = ({
     onNavToggle(newValue)
   }
 
-  const bannerMsg = "Blitz is in beta! 🎉 1.0 expected in May or June"
+  const bannerMsg = "Blitz ist in der Beta! 🎉 1.0 wird für Mai oder Juni erwartet"
 
   const menuLinks = [
     {
-      name: "Documentation",
+      name: "Dokumentation",
       href: isDesktop ? "/docs/get-started" : "/docs",
     },
     {name: "Releases", href: "https://github.com/blitz-js/blitz/releases"},
@@ -130,7 +130,7 @@ const Header = ({
               rel="noopener noreferrer"
               href="https://github.com/sponsors/blitz-js"
             >
-              <FaHeart className="inline mr-1 align-text-top" /> Donate/Sponsor
+              <FaHeart className="inline mr-1 align-text-top" /> Spenden/Sponsern
               <FiArrowUpRight size="0.70rem" className="opacity-50 absolute top-2 right-0" />
             </NavLink>
           </div>
@@ -172,7 +172,8 @@ const Header = ({
               rel="noopener noreferrer"
               href="https://github.com/sponsors/blitz-js"
             >
-              <FaHeart size="1rem" className="inline mr-1 mb-1 align-text-center" /> Donate/Sponsor
+              <FaHeart size="1rem" className="inline mr-1 mb-1 align-text-center" />{" "}
+              Spenden/Sponsern
               <HiExternalLink size="1rem" className="opacity-70 absolute top-3 right-0" />
             </NavLink>
             <div className="py-2">
