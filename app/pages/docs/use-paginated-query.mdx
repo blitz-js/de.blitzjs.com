@@ -3,10 +3,17 @@ title: usePaginatedQuery
 sidebar_label: usePaginatedQuery
 ---
 
+Use `usePaginatedQuery` instead of `useQuery`, if you want to divide large
+data into smaller contiguous intervals of data. For instance, you have
+many numbered pages, and you want to show the first three pages initially.
+After clicking on `Show next pages`, the user should see the following
+three pages only. For this case, you can `usePaginatedQuery` as shown in
+the following example.
+
 ### Example {#example}
 
 ```ts
-import {Suspense} from "react"
+import { Suspense } from "react"
 import {
   Link,
   BlitzPage,
@@ -21,20 +28,20 @@ const ITEMS_PER_PAGE = 3
 
 const Projects = () => {
   const router = useRouter()
-  const {page = 0} = useRouterQuery()
-  const [{projects, hasMore}, {isPreviousData}] = usePaginatedQuery(
+  const { page = 0 } = useRouterQuery()
+  const [{ projects, hasMore }, { isPreviousData }] = usePaginatedQuery(
     getProjects,
     {
       skip: ITEMS_PER_PAGE * Number(page),
       take: ITEMS_PER_PAGE,
-    },
+    }
   )
 
   const goToPreviousPage = () =>
-    router.push({query: {page: Number(page) - 1}})
+    router.push({ query: { page: Number(page) - 1 } })
   const goToNextPage = () => {
     if (!isPreviousData && hasMore) {
-      router.push({query: {page: Number(page) + 1}})
+      router.push({ query: { page: Number(page) + 1 } })
     }
   }
 
@@ -42,7 +49,7 @@ const Projects = () => {
     <div>
       {projects.map((project) => (
         <p key={project.id}>
-          <Link href={Routes.Project({handle: project.handle})}>
+          <Link href={Routes.Project({ handle: project.handle })}>
             <a>{project.name}</a>
           </Link>
         </p>
@@ -65,8 +72,8 @@ And here's the query to work with that:
 
 ```ts
 export default async function getProjects(
-  {where, orderBy, cursor, take, skip}: GetProjectsInput,
-  ctx: Record<any, any> = {},
+  { where, orderBy, cursor, take, skip }: GetProjectsInput,
+  ctx: Record<any, any> = {}
 ) {
   const projects = await db.project.findMany({
     where,
