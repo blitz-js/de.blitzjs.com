@@ -54,8 +54,14 @@ const Home = ({randomContributors}) => {
                     Das Fullstack React Framework
                   </h2>
                   <p className="text-lg xl:text-xl xl:font-medium text-off-white lg:text-transparent lg:bg-clip-text lg:bg-gradient-to-r lg:from-blue-gradient-white lg:to-blue-gradient-light-blue xl:w-4/5">
+<<<<<<< HEAD
                     Blitz ist ein auf Ruby on Rails basierendes Framework. Es bauf auf Next.js und
                     bietet eine"Zero-API" Datenschicht Abstraktion die kein REST/GraphQL benötigt.
+=======
+                    Blitz is a batteries-included framework that&apos;s inspired by Ruby on Rails,
+                    is built on Next.js, and features a &quot;Zero-API&quot; data layer abstraction
+                    that eliminates the need for REST/GraphQL.
+>>>>>>> 9a282371a929bae5732160068e4ff99fb796722c
                   </p>
                   <div className="flex space-x-4">
                     <ButtonLink className="w-2/3 lg:w-auto rounded-tl-xl" href="/docs/get-started">
@@ -164,8 +170,13 @@ const Home = ({randomContributors}) => {
                         ausgetretenen Pfade begeben muss, ist man total frei, dies zu tun.
                       </p>
                       <p>
+<<<<<<< HEAD
                         Und fast alles ist zusammenführbar. Zum Beispiel schreiben wir nicht vor,
                         welche Styling- oder Formularbibliotheken, man zu verwenden hat.
+=======
+                        And nearly everything is pluggable. For example, we don&apos;t mandate which
+                        styling or form libraries you use.
+>>>>>>> 9a282371a929bae5732160068e4ff99fb796722c
                       </p>
                     </Feature>
                     <Feature title="Konvention vor Konfiguration">
@@ -187,9 +198,14 @@ const Home = ({randomContributors}) => {
                     </Feature>
                     <Feature title="Stabilität">
                       <p>
+<<<<<<< HEAD
                         Sobald wir Version 1.0 erreicht haben, werden wir zu einem stabilen,
                         vorhersehbaren Releasezyklus mit mehreren Kanälen wie Stable, LTS und Beta
                         wechseln.
+=======
+                        Once we reach version 1.0, we&apos;ll switch to a stable, predictable
+                        release cycle with multiple channels like stable, LTS, and beta.
+>>>>>>> 9a282371a929bae5732160068e4ff99fb796722c
                       </p>
                       <p>Wir lassen uns diesbezüglich sehr von Ember inspirieren.</p>
                     </Feature>
@@ -210,7 +226,12 @@ const Home = ({randomContributors}) => {
                   href="https://codesandbox.io/s/flamboyant-meninsky-j63yq?file=/app/projects/mutations/createProject.ts"
                   className="h-sandbox xl:h-xl-sandbox block relative"
                 >
-                  <Image src="/img/sandbox-pic.png" layout="fill" className="object-cover" />
+                  <Image
+                    src="/img/sandbox-pic.png"
+                    layout="fill"
+                    className="object-cover"
+                    alt="Codesandbox placeholder"
+                  />
                   <div className="absolute inset-0 bg-gray-800 opacity-0 hover:opacity-70 flex items-center justify-center text-white text-6xl font-bold">
                     Klicke, um in einem neuen Tab zu öffnen
                   </div>
@@ -231,7 +252,10 @@ const Home = ({randomContributors}) => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <img
+                      <Image
+                        layout="intrinsic"
+                        width="100%"
+                        height="100%"
                         src={contributor.avatar_url}
                         alt={contributor.name}
                         title={contributor.name}
@@ -275,7 +299,11 @@ const Home = ({randomContributors}) => {
                       ähnlicher, als wir anders sind. Wir lieben es zusammenzuarbeiten.
                     </p>
                     <p className="lg:bg-gradient-to-r lg:from-blue-gradient-white lg:to-blue-gradient-light-blue lg:bg-clip-text">
+<<<<<<< HEAD
                       Wir laden dich ein, Blitz zum besten Framework zu machen, das wir je hatten!
+=======
+                      We invite you to help make Blitz the best framework we&apos;ve ever had!
+>>>>>>> 9a282371a929bae5732160068e4ff99fb796722c
                     </p>
                   </div>
                   <Link href="/docs/contributing" passHref>
